@@ -18,10 +18,14 @@ export const Container = styled.div`
     }
 `
 
-export const ProductImgContainer = styled.div`
+export const ProductImgContainer = styled.picture`
     grid-area: img;
     display: flex;
-`   
+`
+
+export const ProductImgResponsive = styled.source`
+
+`
 
 export const ProductImg = styled.img`
     width: 100%;
@@ -34,6 +38,11 @@ export const ContentContainer = styled.main`
     display: flex;
     flex-direction: column;
     row-gap: .5rem;
+
+    @media (min-width: 700px) {
+        justify-content: space-between;
+        padding: 2rem;
+    }
 `
 
 export const Info = styled.h2`
@@ -93,7 +102,12 @@ export const CartButton = styled.button`
     font-weight: 700;
     column-gap: .5rem;
     border-radius: 10px;
+    cursor: pointer;
     background-color: #3c8067;
+
+    &:hover {
+        background-color: #1c232b;
+    }
 `
 
 export const CartIcon = styled.img`

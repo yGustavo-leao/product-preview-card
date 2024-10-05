@@ -1,9 +1,10 @@
-import { CartButton, CartIcon, Container, ContentContainer, CurrentPrice, Description, Info, OldPrice, PriceContainer, ProductImg, ProductImgContainer, Title } from "./Card.styled"
+import { CartButton, CartIcon, Container, ContentContainer, CurrentPrice, Description, Info, OldPrice, PriceContainer, ProductImg, ProductImgContainer, ProductImgResponsive, Title } from "./Card.styled"
 
 export const Card = () => {
     return (
         <Container>
             <ProductImgContainer>
+                <ProductImgResponsive media="(min-width: 700px)" srcSet={`${process.env.PUBLIC_URL}/assets/images/image-product-desktop.jpg`} />
                 <ProductImg src={`${process.env.PUBLIC_URL}/assets/images/image-product-mobile.jpg`} alt="Product image" />
             </ProductImgContainer>
 
