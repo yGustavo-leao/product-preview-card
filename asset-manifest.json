@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/product-preview-card/static/js/main.299589d3.js",
+    "main.js": "/product-preview-card/static/js/main.85911027.js",
     "index.html": "/product-preview-card/index.html",
-    "main.299589d3.js.map": "/product-preview-card/static/js/main.299589d3.js.map"
+    "main.85911027.js.map": "/product-preview-card/static/js/main.85911027.js.map"
   },
   "entrypoints": [
-    "static/js/main.299589d3.js"
+    "static/js/main.85911027.js"
   ]
 }
